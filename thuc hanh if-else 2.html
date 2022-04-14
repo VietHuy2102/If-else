@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Bài 1: Chuyển từ độ C sang độ F </h3>
+<button id="lesson1" onclick="lesson1()">Bấm để thực hành bài 1</button>
+<script>
+    function lesson1() {
+        let C = +prompt("nhập số độ C");
+        let result1 = C * 9 / 5 + 32;
+        let display1 = " nhiệt độ F là " + result1
+        alert(display1)
+    }
+</script>
+<h3> Bài 2: Chuyển từ mét sang feet</h3>
+<button id="lesson2" onclick="lesson2()">Bấm để thực hành bài 2</button>
+<script>
+    function lesson2() {
+        let met = prompt("nhập giá trị mét");
+        let result2 = met * 3.2808;
+        let display2 = "Giá trị feet tương ứng " + result2;
+        alert(display2);
+    }
+</script>
+<h3>Bài 3: Tính diện tích hình vuông </h3>
+<button id="lesson3" onclick="lesson3()">Bấm để thực hành bài 3</button>
+<script>
+    function lesson3() {
+        let a = prompt("Nhập chiều dài của 1 cạnh : ");
+        let result3 = a * a;
+        let display3 = ("Diện tích hình vuông là : " + result3)
+        alert(display3)
+    }
+</script>
+<h3>Bài 4: Tính diện tích hình chữ nhật</h3>
+<button id="lesson4" onclick="lesson4()">Bấm để thực hành bài 4</button>
+<script>
+    function lesson4() {
+
+        let a = prompt("chiều dài của cạnh dài là : ");
+        let b = prompt("chiều dài của cạnh ngắn là : ");
+        let result4 = a * b;
+        let display4 = (" Diện tích hình chữ nhật là : " + result4)
+
+        alert(display4)
+    }
+</script>
+<h3>Bài 5: Tính diện tích tam giác vuông</h3>
+<button id="lesson5" onclick="lesson5()">Bấm để thực hành bài 5</button>
+<script>
+    function lesson5() {
+        let a = prompt(" chiều dài cạnh thứ nhất: ")
+        let b = prompt(" chiều dài cạnh thứ hai: ")
+        let result5 = a * b / 2
+        let display5 = ("Diện tích tam giác vuông là : " + result5)
+        alert(display5)
+    }
+</script>
+<h3>Bài 6: Giải phương trình bậc 1</h3>
+<button id="lesson6"onclick="lesson6()" >Bấm để thực hành bài 6</button>
+<script>
+    function lesson6() {
+        let a = +prompt("Nhập giá trị a là : ")
+        let b = +prompt("Nhập giá trị b là : ")
+        let result6 = -b / a
+        let display6 = ("giá trị x là :" + result6)
+        alert(display6)
+    }
+</script>
+<h3>Bài 8: Kiểm tra tuổi</h3>
+<button id="lesson7" onclick="lesson7()" >Bấm để thực hành bài 7</button>
+<script>
+    function lesson7() {
+        let a = +prompt("Nhập tuổi của bạn: ")
+        if (a>0 && a < 120 ){
+            alert("đây là tuổi của bạn")
+        }
+        else {
+            alert("đây không phải tuổi của con người mà là của con thú")
+        }
+    }
+</script>
+
+</body>
+</html>
